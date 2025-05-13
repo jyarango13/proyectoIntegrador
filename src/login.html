@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CNA-PORTAL-ACCESO</title>
+        <link
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            html,
+            body {
+                height: 100%;
+            }
+        </style>
+        <link rel="stylesheet" href="css/login.css" />
+        <!-- Asumiendo que tu CSS estará en un archivo llamado styles.css -->
+    </head>
+    <body>
+        <div class="login-background">
+            <div class="login-card">
+                <div class="logo-container">
+                    <span>CNA</span>
+                </div>
+                <div class="login-title">
+                    <h1>Portal de Acceso</h1>
+                    <div id="spinner" class="spinner" style="text-align: center; display: none;"></div>
+                </div>
+                
+             
+                <!-- Sección para mostrar alertas de error -->
+                <div
+                    id="error-message"
+                    class="alert-error"
+                    style="
+                        display: none;
+                        color: rgb(255, 255, 255);
+                        padding: 10px;
+                        border: 1px solid red;
+                        margin-bottom: 10px;
+                        border-radius: 8px;
+                        background: rgba(237, 11, 11, 0.5);
+                    "
+                >
+                    Error: ¡Credenciales incorrectas!
+                </div>
+                <form>
+                    <input
+                        type="email"
+                        placeholder="Usuario"
+                        id="txtUser"
+                        required
+                    />
+                    <input
+                        type="password"
+                        placeholder="Contraseña"
+                        id="txtPass"
+                        required
+                    />
+                    <button type="submit" id="btnLogin" style="float: left;">Acceder</button>
+                    
+                </form>
+            </div>
+        </div>
+        <script type="module" src="js/login.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Puedes cambiar esto por la fuente que prefieras */
+}
+
+.login-background {
+    background: linear-gradient(rgba(41, 38, 50, 0.6), rgba(37, 57, 160, 0.6)), url('../img/background_logo.jpg');
+    /* Sustituye 'background-image.jpg' por la URL de tu imagen de fondo */
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-background {
+    background: linear-gradient(rgba(41, 38, 50, 0.6), rgba(37, 57, 160, 0.6)), url('../img/cna_background.jpg');
+    /* Sustituye 'background-image.jpg' por la URL de tu imagen de fondo */
+    background-size: cover;
+    height: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+    width: 550px; /* Puedes ajustar este valor según prefieras */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.login-card h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000000;
+    border-radius: 5px;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color:  rgba(1, 84, 201, 0.7); /* Puedes cambiar esto por el color que prefieras */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.login-title {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.spinner {
+    border: 5px solid rgba(255, 255, 255, 0.3); /* Color del borde con transparencia */
+    border-radius: 50%;  /* Hace que sea circular */
+    border-top: 5px solid #000;  /* Color del borde superior */
+    width: 24px;  /* Diámetro del spinner */
+    height: 24px;
+    animation: spin 1s linear infinite;  /* Animación */
+    margin-left: 10px;  /* Espacio entre el botón y el spinner */
+    display: inline-block;  /* Para que se muestre al lado del botón */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
